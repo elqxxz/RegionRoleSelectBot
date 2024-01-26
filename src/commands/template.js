@@ -37,7 +37,7 @@ const choice = [
     },
     {
         label:'EU',
-        description:'Pendosian',
+        description:'Europian',
         value:'EU',
     }
 ]
