@@ -10,24 +10,8 @@ const client = new Client({
 });
 /** @type {import('commandkit').CommandData} */
 
-const data = {
-    name: 'moderate',
-    description: 'moderation',
-    options: [
-        {
-            name: 'user', 
-            description: 'user to moderate',
-            type: ApplicationCommandOptionType.User,
-            required: true,
-        }
-    ],
-};
-
 /** @param {import('commandkit').SlashCommandProps} param0 */
 // основная часть
-async function run(interaction){
-
-}
 
 const choice = [
     {
@@ -37,7 +21,7 @@ const choice = [
     },
     {
         label:'EU',
-        description:'Pendosian',
+        description:'Europian',
         value:'EU',
     }
 ]
@@ -101,6 +85,6 @@ client.on('ready', () => {
 });
 
 /** @type {import('commandkit').CommandOptions} */
-module.exports = { data, run }
+module.exports = {}
 
 client.login(process.env.TOKEN)

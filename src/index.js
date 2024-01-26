@@ -15,8 +15,6 @@ new CommandKit({
     client,
     commandsPath: `${__dirname}/commands`,
     eventsPath: `${__dirname}/events`,
-    devGuildIds: [process.env.GUILD_ID],
-    devRoleIds: [process.env.MOD_ROLE_ID],
     bulkRegister: true,
 });
 
